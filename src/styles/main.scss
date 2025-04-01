@@ -17,6 +17,7 @@ body {
     background-image: url(../images/bg_spider.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 
     &::before {
         position: absolute;
