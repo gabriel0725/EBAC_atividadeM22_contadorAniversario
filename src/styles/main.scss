@@ -1,5 +1,52 @@
-$corDeFundo: blue;
+@use 'variables';
+@use 'hero';
+@use 'infos_bar';
+@use 'buttons';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
 
 body {
-    background-color: $corDeFundo   ;
+    background-image: url(../images/bg_spider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: .3;
+    }
+
+    @media (max-width: 640px) {
+        background-size: auto;;
+    }
+
+
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1023px) {
+        max-width: 90%;
+        
+    }
 }

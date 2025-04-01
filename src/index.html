@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
-    <h1>a</h1>
-    <h2>foi?</h2>
+        <header class="hero">
+            <div class="container">
+                <h1 class="hero__title">ANIVERSÁRIO DO CLARK</h1>
+                <p class="hero__text">Você foi convidado para o aniversário do Clark, e ele começa em: <br> <span id="contador"></span></p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Piqueri - São Paulo
+                    </li>
+                    
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        25/07/2025 às 19hrs
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="button button--primary">
+                Confirme sua presença
+            </a>
+        </header>
 </body> 
 <script src="./scripts/main.js"></script>
 </html>
